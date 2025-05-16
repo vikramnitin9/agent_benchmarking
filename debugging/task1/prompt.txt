@@ -1,0 +1,10 @@
+I encounter a runtime error when attempting to run the project in `debugging/task1/<dirname>`. The commands I'm running are:
+```
+cd debugging/task1/<dirname>
+mkdir build && cd build
+cmake .. && make
+cd ../example
+make clean && bear make
+../build/parsec *c
+```
+Could you debug and fix the error?

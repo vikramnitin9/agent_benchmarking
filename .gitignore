@@ -1,0 +1,7 @@
+.env
+__pycache__/
+build/
+target/
+*.o
+*.a
+compile_commands.json

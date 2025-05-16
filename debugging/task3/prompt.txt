@@ -1,0 +1,20 @@
+In the directory `debugging/task3/<dirname>`, I'm building a utility, `parsec` to parse C code, add instrumentation to it, and generate a static library. I build it with the following commands:
+```
+cd debugging/task3/<dirname>/
+mkdir build && cd build
+cmake .. && make
+```
+Then I run it on the example code to generate the static library and the executable:
+```
+cd ../example
+make clean && bear make
+../build/parsec *c
+clang libfoo.a -o foo
+```
+This works fine, but when I run the executable, there is a segmentation fault.
+```
+./foo hello.txt
+```
+If I do this process without running `parsec`, the `foo` executable runs fine. So there must be some issue with `parsec`, possibly in the instrumentation, that is causing the segmentation fault.
+
+Could you debug and fix the error? Feel free to run the code and observe the segmentation fault. `parsec` adds debug information, so you could also run gdb if necessary.

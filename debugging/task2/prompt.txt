@@ -1,0 +1,4 @@
+I'm building and running my Docker container in `debugging/task2/<dirname>/` using the script `run.sh`.
+If I remove the line `-u $(id -u):$(id -g)`, then it works fine. However I don't want to run as the root user.
+With that line added, I get some errors running the container. Could you modify the Dockerfile and/or `run.sh` to fix these?
+Build and run the container with `run.sh` to verify that the error is gone.

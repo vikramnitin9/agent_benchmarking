@@ -1,0 +1,4 @@
+Create a Docker container that wraps a Python program.
+When the container is run, I want to run the Python program within the container, get its output, and write it to a file `log.txt` that is accessible from outside the container.
+Create a placeholder "Hello World" Python program. Also create the Dockerfile and all other necessary files. Build and run the container to verify that the log.txt file contains "Hello World".
+Create all your files in the `creation/task3/<dirname>` directory.

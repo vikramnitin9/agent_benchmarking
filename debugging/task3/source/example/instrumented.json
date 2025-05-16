@@ -1,0 +1,81 @@
+{ "name": "set_program_name", "args": {"argv0" : "0x7ffeafb3d210"}, "return": [] },
+{ "name": "io_blksize", "args": {"st" : "0x7ffeafb3bea0"}, "return": ["262144"] },
+{ "name": "__gl_setmode", "args": {"fd" : "1", "mode" : "0"}, "return": ["0"] },
+{ "name": "set_binary_mode", "args": {"fd" : "1", "mode" : "0"}, "return": ["0"] },
+{ "name": "xset_binary_mode", "args": {"fd" : "1", "mode" : "0"}, "return": [] },
+{ "name": "io_blksize", "args": {"st" : "0x7ffeafb3bea0"}, "return": ["262144"] },
+{ "name": "fdadvise", "args": {"fd" : "4", "offset" : "0", "len" : "0", "advice" : "2"}, "return": [] },
+{ "name": "alignalloc", "args": {"alignment" : "4096", "size" : "262144"}, "return": ["0x7fd05b92f000"] },
+{ "name": "xalignalloc", "args": {"alignment" : "4096", "size" : "262144"}, "return": ["0x7fd05b92f000"] },
+{ "name": "safe_read", "args": {"fd" : "4", "buf" : "0x7fd05b92f000", "count" : "262144"}, "return": ["24171"] },
+{ "name": "safe_write", "args": {"fd" : "1", "buf" : "0x7fd05b92f000", "count" : "24171"}, "return": ["24171"] },
+{ "name": "full_write", "args": {"fd" : "1", "buf" : "0x7fd05b92f000", "count" : "24171"}, "return": ["24171"] },
+{ "name": "safe_read", "args": {"fd" : "4", "buf" : "0x7fd05b92f000", "count" : "262144"}, "return": ["0"] },
+{ "name": "simple_cat", "args": {"buf" : "/* cat -- concatenate files and print on the standard output.
+   Copyright (C) 1988-2024 Free Softwa", "bufsize" : "262144"}, "return": ["1"] },
+{ "name": "alignfree", "args": {"ptr" : "0x7fd05b92f000"}, "return": [] },
+{ "name": "main", "args": {"argc" : "2", "argv" : "0x7ffeafb3c0e8"}, "return": ["0"] },
+{ "name": "rpl_fflush", "args": {"stream" : "0x7fd05bfe86a0"}, "return": ["0"] },
+{ "name": "rpl_fclose", "args": {"fp" : "0x7fd05bfe86a0"}, "return": ["0"] },
+{ "name": "close_stream", "args": {"stream" : "0x7fd05bfe86a0"}, "return": ["0"] },
+{ "name": "rpl_fflush", "args": {"stream" : "0x7fd05bfe85c0"}, "return": ["0"] },
+{ "name": "rpl_fclose", "args": {"fp" : "0x7fd05bfe85c0"}, "return": ["0"] },
+{ "name": "close_stream", "args": {"stream" : "0x7fd05bfe85c0"}, "return": ["0"] },
+{ "name": "close_stdout", "args": {}, "return": [] },
+{ "name": "set_program_name", "args": {"argv0" : "./cat"}, "return": [] },
+{ "name": "io_blksize", "args": {"st" : "0x7ffefa7f0110"}, "return": ["262144"] },
+{ "name": "__gl_setmode", "args": {"fd" : "1", "mode" : "0"}, "return": ["0"] },
+{ "name": "set_binary_mode", "args": {"fd" : "1", "mode" : "0"}, "return": ["0"] },
+{ "name": "xset_binary_mode", "args": {"fd" : "1", "mode" : "0"}, "return": [] },
+{ "name": "io_blksize", "args": {"st" : "0x7ffefa7f0110"}, "return": ["262144"] },
+{ "name": "fdadvise", "args": {"fd" : "4", "offset" : "0", "len" : "0", "advice" : "2"}, "return": [] },
+{ "name": "alignalloc", "args": {"alignment" : "4096", "size" : "262144"}, "return": ["0x7fdc567b9000"] },
+{ "name": "xalignalloc", "args": {"alignment" : "4096", "size" : "262144"}, "return": ["0x7fdc567b9000"] },
+{ "name": "safe_read", "args": {"fd" : "4", "buf" : "/* cat -- concatenate files and print on the standard output.
+   Copyright (C) 1988-2024 Free Softwa", "count" : "262144"}, "return": ["24171"] },
+{ "name": "safe_write", "args": {"fd" : "1", "buf" : "/* cat -- concatenate files and print on the standard output.
+   Copyright (C) 1988-2024 Free Softwa", "count" : "24171"}, "return": ["24171"] },
+{ "name": "full_write", "args": {"fd" : "1", "buf" : "/* cat -- concatenate files and print on the standard output.
+   Copyright (C) 1988-2024 Free Softwa", "count" : "24171"}, "return": ["24171"] },
+{ "name": "safe_read", "args": {"fd" : "4", "buf" : "/* cat -- concatenate files and print on the standard output.
+   Copyright (C) 1988-2024 Free Softwa", "count" : "262144"}, "return": ["0"] },
+{ "name": "simple_cat", "args": {"buf" : "/* cat -- concatenate files and print on the standard output.
+   Copyright (C) 1988-2024 Free Softwa", "bufsize" : "262144"}, "return": ["1"] },
+{ "name": "set_program_name", "args": {"argv0" : "./cat"}, "return": [] },
+{ "name": "io_blksize", "args": {"st" : "0x7ffca7d69270"}, "return": ["262144"] },
+{ "name": "__gl_setmode", "args": {"fd" : "1", "mode" : "0"}, "return": ["0"] },
+{ "name": "set_binary_mode", "args": {"fd" : "1", "mode" : "0"}, "return": ["0"] },
+{ "name": "xset_binary_mode", "args": {"fd" : "1", "mode" : "0"}, "return": [] },
+{ "name": "io_blksize", "args": {"st" : "0x7ffca7d69270"}, "return": ["262144"] },
+{ "name": "fdadvise", "args": {"fd" : "4", "offset" : "0", "len" : "0", "advice" : "2"}, "return": [] },
+{ "name": "alignalloc", "args": {"alignment" : "4096", "size" : "262144"}, "return": ["0x7f8c93806000"] },
+{ "name": "xalignalloc", "args": {"alignment" : "4096", "size" : "262144"}, "return": ["0x7f8c93806000"] },
+{ "name": "safe_read", "args": {"fd" : "4", "buf" : "Hello World
+", "count" : "262144"}, "return": ["12"] },
+{ "name": "safe_write", "args": {"fd" : "1", "buf" : "Hello World
+", "count" : "12"}, "return": ["12"] },
+{ "name": "full_write", "args": {"fd" : "1", "buf" : "Hello World
+", "count" : "12"}, "return": ["12"] },
+{ "name": "safe_read", "args": {"fd" : "4", "buf" : "Hello World
+", "count" : "262144"}, "return": ["0"] },
+{ "name": "simple_cat", "args": {"buf" : "Hello World
+", "bufsize" : "262144"}, "return": ["1"] },
+{ "name": "set_program_name", "args": {"argv0" : "./foo"}, "return": [] },
+{ "name": "io_blksize", "args": {"st" : "0x7ffcdb9643e0"}, "return": ["262144"] },
+{ "name": "__gl_setmode", "args": {"fd" : "1", "mode" : "0"}, "return": ["0"] },
+{ "name": "set_binary_mode", "args": {"fd" : "1", "mode" : "0"}, "return": ["0"] },
+{ "name": "xset_binary_mode", "args": {"fd" : "1", "mode" : "0"}, "return": [] },
+{ "name": "io_blksize", "args": {"st" : "0x7ffcdb9643e0"}, "return": ["262144"] },
+{ "name": "fdadvise", "args": {"fd" : "4", "offset" : "0", "len" : "0", "advice" : "2"}, "return": [] },
+{ "name": "alignalloc", "args": {"alignment" : "4096", "size" : "262144"}, "return": ["0x7fb56ca69000"] },
+{ "name": "xalignalloc", "args": {"alignment" : "4096", "size" : "262144"}, "return": ["0x7fb56ca69000"] },
+{ "name": "safe_read", "args": {"fd" : "4", "buf" : "Hello World
+", "count" : "262144"}, "return": ["12"] },
+{ "name": "safe_write", "args": {"fd" : "1", "buf" : "Hello World
+", "count" : "12"}, "return": ["12"] },
+{ "name": "full_write", "args": {"fd" : "1", "buf" : "Hello World
+", "count" : "12"}, "return": ["12"] },
+{ "name": "safe_read", "args": {"fd" : "4", "buf" : "Hello World
+", "count" : "262144"}, "return": ["0"] },
+{ "name": "simple_cat", "args": {"buf" : "Hello World
+", "bufsize" : "262144"}, "return": ["1"] },

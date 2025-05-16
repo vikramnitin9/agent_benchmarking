@@ -1,0 +1,15 @@
+Suppose I have some data in the following format where every row corresponds to a function:
+```
+FuncName, Length, Result
+foo, 20, Success
+bar, 120, Failure
+...
+```
+I want to plot a graph of the success rate against length, where the length is divided into bins of size 10.
+E.g., 0-10, 10-20, ...
+I want to plot a line graph of the success rate of each bin. On the same graph, I want to plot a bar plot of the number of functions in each bin.
+
+I've attached a screenshot of the desired graph. Try to replicate it a closely as possible, including legend, axis labels, etc.
+
+Write a Python script with Matplotlib to do this. Create some sample data as well as the Python program. Run the Python program and save the plot to `plot.pdf`.
+Create all your files in `creation/task5/<dirname>`.
