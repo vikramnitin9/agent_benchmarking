@@ -7,6 +7,14 @@ This folder contains 10 scenarios, divided into 3 categories:
 
 To run and evaluate a particular scenario, consult the `README.md` located in the subfolder of the scenario you would like to run.
 
+# Setting up the editor
+
+Run VSCode Agent in "Auto Approve" mode. Go to Settings (ctrl + ,) and search for "Auto Approve". Enable it.
+Run Cursor in "Yolo" mode.
+
+Sometimes, VSCode will ask you "Continue to iterate?". You can click the "Continue" button for this. But do not type any text response.
+Similarly, Cursor also asks you whether to continue generation ("by default we stop after 25 LLM calls..."). You can click "continue" here, but do not enter any text response.
+
 ## Logging chats
 Once you run a particular scenario, you can log the chat to preserve a record.
 - In VSCode, make sure the log level for terminal and Github copilot chat are set to "Debug". Then click on "Chat: Export Chat", and save the json as `chat.json` in the scenario subfolder. For example, `creation/task1/vscode_gpt41/chat.json`.
