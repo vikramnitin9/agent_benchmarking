@@ -1,6 +1,9 @@
 ## Dependencies
 ```sh
-sudo apt install llvm-10 llvm-10-dev llvm-10-tools clang-10 libclang-10-dev
+wget https://apt.llvm.org/llvm.sh
+chmod +x llvm.sh
+sudo ./llvm.sh 14
+sudo apt install llvm-14 llvm-14-dev llvm-14-tools clang-14 libclang-14-dev
 ```
 
 ## Steps to follow

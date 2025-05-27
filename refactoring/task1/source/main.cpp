@@ -23,7 +23,7 @@
 
 #include "llvm/Target/TargetMachine.h"
 #include "llvm/Support/FileSystem.h"
-#include "llvm/Support/TargetRegistry.h"
+#include "llvm/MC/TargetRegistry.h"
 #include "llvm/Support/TargetSelect.h"
 #include "llvm/IR/LegacyPassManager.h"
 #include "llvm/Support/Host.h"
@@ -420,8 +420,8 @@ void addInstrumentation(llvm::Module &M) {
 
 bool compareFilenames(std::string filename1, std::string filename2) {
 	// Compare the filenames without the path
-	std::string baseName1 = llvm::sys::path::filename(filename1);
-	std::string baseName2 = llvm::sys::path::filename(filename2);
+	llvm::StringRef baseName1 = llvm::sys::path::filename(filename1);
+	llvm::StringRef baseName2 = llvm::sys::path::filename(filename2);
 	return baseName1 == baseName2;
 }
 
@@ -480,7 +480,7 @@ int main(int argc, const char **argv) {
 		}
 		for (auto &entry : jsonData) {
 			if (entry["name"] == F.getName() &&
-				compareFilenames(entry["filename"], SubProg->getFilename())) {
+				compareFilenames(entry["filename"], SubProg->getFilename().str())) {
 				auto mutableEntry = entry;
 				mutableEntry["calledFunctions"] = calledFunctions;
 				// Update the entry in the set

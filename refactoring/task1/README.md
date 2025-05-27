@@ -1,6 +1,10 @@
 ## Dependencies
 ```sh
 sudo apt install g++-9
+wget https://apt.llvm.org/llvm.sh
+chmod +x llvm.sh
+sudo ./llvm.sh 14
+sudo apt install llvm-14 llvm-14-dev llvm-14-tools clang-14 libclang-14-dev
 ```
 
 ## Steps to follow

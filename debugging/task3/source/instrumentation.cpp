@@ -4,8 +4,8 @@ using namespace llvm;
 using json = nlohmann::json;
 
 bool compareFilenames(std::string filename1, std::string filename2) {
-	std::string baseName1 = llvm::sys::path::filename(filename1);
-	std::string baseName2 = llvm::sys::path::filename(filename2);
+	llvm::StringRef baseName1 = llvm::sys::path::filename(filename1);
+	llvm::StringRef baseName2 = llvm::sys::path::filename(filename2);
 	return baseName1 == baseName2;
 }
 
@@ -70,7 +70,7 @@ void addInstrumentation(Module &M, std::unordered_set<json> jsonData) {
 		bool found = false;
 		for (auto &entry : jsonData) {
 			if (entry["name"] == F.getName() &&
-					compareFilenames(entry["filename"], SubProg->getFilename())) {
+					compareFilenames(entry["filename"], SubProg->getFilename().str())) {
 				argTypes = entry["argTypes"];
 				argNames = entry["argNames"];
 				retType = entry["returnType"];

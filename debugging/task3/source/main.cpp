@@ -11,7 +11,7 @@
 
 #include "llvm/Target/TargetMachine.h"
 #include "llvm/Support/FileSystem.h"
-#include "llvm/Support/TargetRegistry.h"
+#include "llvm/MC/TargetRegistry.h"
 #include "llvm/Support/TargetSelect.h"
 #include "llvm/IR/LegacyPassManager.h"
 #include "llvm/Support/Host.h"
@@ -110,7 +110,7 @@ int main(int argc, const char **argv) {
 		}
 		for (auto &entry : jsonData) {
 			if (entry["name"] == F.getName() &&
-				compareFilenames(entry["filename"], SubProg->getFilename())) {
+				compareFilenames(entry["filename"], SubProg->getFilename().str())) {
 				auto mutableEntry = entry;
 				mutableEntry["calledFunctions"] = calledFunctions;
 				// Update the entry in the set

@@ -6,12 +6,17 @@ RUN apt install -y build-essential
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN apt install -y llvm-10 llvm-10-dev llvm-10-tools clang-10 libclang-10-dev
 RUN apt install -y cmake
 RUN apt install -y wget
 RUN apt install -y unzip
 RUN apt install -y bear
 RUN apt install -y curl
+
+RUN apt install -y software-properties-common
+RUN wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key| apt-key add -
+RUN add-apt-repository -y "deb http://apt.llvm.org/focal/ llvm-toolchain-focal-14 main"
+RUN apt update
+RUN apt install -y llvm-14 llvm-14-dev llvm-14-tools clang-14 libclang-14-dev
 
 ENV PATH="/root/miniconda3/bin:${PATH}"
 ARG PATH="/root/miniconda3/bin:${PATH}"
