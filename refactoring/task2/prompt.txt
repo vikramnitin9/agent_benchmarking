@@ -8,4 +8,28 @@ Then once this completes successfully, the command to run the code is:
 ```
 bash run.sh toy gpt4o
 ```
-The entire program might take a very long time to run, but if you see a line saying "Translation succeeded" then you can assume that the program is correct.
+The entire program might take a while to run, but you should see this output and an exit code of 0:
+```
+ Translating code in directory: /app/data/toy
+ Copied over the code to /app/output/toy
+ Found executable target: toy
+ Compilation succeeded
+ Generated executable: /app/output/toy/target/debug/toy
+ Running tests against the following executable: /app/output/toy/target/debug/toy
+ Test passed: data/toy/tests/test.sh
+ Translating function: subtract
+ Calling LLM for translation
+ LLM response received
+ Linker error. Cleaning up and trying again.
+ Linker error. Cleaning up and trying again.
+ Attempt 1/2
+ Translation failed
+ Resetting changes.
+ Calling LLM for repair
+ LLM response received
+ Linker error. Cleaning up and trying again.
+ Linker error. Cleaning up and trying again.
+ Attempt 2/2
+ Translation failed
+ Resetting changes.
+```

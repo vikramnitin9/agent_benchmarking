@@ -56,4 +56,6 @@ RUN cd parsec && \
     cmake .. && \
     make -j 4
 
+RUN mkdir -p /app/output
+
 ENV PARSEC_BUILD_DIR=/app/parsec/build

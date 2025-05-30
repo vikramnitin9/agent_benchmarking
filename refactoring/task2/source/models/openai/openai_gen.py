@@ -1,16 +1,15 @@
-import openai
-from openai import OpenAI
 import os
 
 import time
 import os
+
+
 
 class OpenAIGen:
 
     def __init__(self, model):
 
         self.model = model
-        self.client = OpenAI(api_key=os.environ['OPENAI_API_KEY'])
 
     def gen(self, messages, temperature=0, seed=True, top_k=1):
         '''
@@ -24,29 +23,21 @@ class OpenAIGen:
                      ...]
         len(<returned>) == top_k
         '''
-
+        # This is a dummy implementation for demonstration purposes.
         from .. import ModelException
 
         if top_k != 1 and temperature == 0:
             raise ModelException("Top k sampling requires a non-zero temperature")
 
-        count = 0
-        while True:
-            try:
-                if seed:
-                    chat = self.client.chat.completions.create(model=self.model, messages=messages, temperature=temperature, seed=42, n=top_k)
-                else:
-                    chat = self.client.chat.completions.create(model=self.model, messages=messages, temperature=temperature, n=top_k)   
-                break
-            except openai.BadRequestError as e:
-                raise ModelException(f"Encountered an error with OpenAI API {e}")
-            except (openai.RateLimitError, openai.APIConnectionError, openai.APITimeoutError, openai.ConflictError, openai.InternalServerError, openai.UnprocessableEntityError):
-                count += 1
-                if count >= 5:
-                    raise ModelException("OpenAI API: Too many retries")
-                print("OpenAI Rate Limit Error. Waiting 10 seconds and retrying")
-                time.sleep(10)
-            except:
-                raise ModelException("OpenAI API: Unknown error")
+        responses = []
+        for _ in range(top_k):
+            response = """
+<FUNC>
+// Hello World
+</FUNC>
+<WRAPPER>
+// Hello World
+</WRAPPER>"""
+            responses.append(response.strip())
 
-        return [choice.message.content for choice in chat.choices]
+        return responses

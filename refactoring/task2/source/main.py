@@ -541,8 +541,8 @@ class Validator:
 
         compile_success = False
         error_message = ''
-        # Try 5 times to compile, in case there is a timeout or mysterious linker error
-        for _ in range(5):
+        # Try 2 times to compile, in case there is a timeout or mysterious linker error
+        for _ in range(2):
             try:
                 source_manager.compile()
                 compile_success = True
@@ -685,6 +685,8 @@ class TranslationEngine:
                     translation = translator.repair(result, self.source_manager, self.verbose)
                     result = validator.validate(func, translation, self.source_manager, self.test_manager)
             
+            exit(0) # This is just for testing purposes, to stop after the first function
+            
             self.log['results'].append({'function': func['name'],
                                    'results': "Success" if result['success'] else result['category']})
             with open(self.log_file, 'w') as f:
@@ -696,7 +698,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Translate code snippets to idiomatic Rust')
     parser.add_argument('--dataset',        type=str,   default='toy',          help='Dataset identifier from datasets.yaml')
     parser.add_argument('--model',          type=str,   default='gpt4o-mini',   help='Model to use for translation')
-    parser.add_argument('--num_attempts',   type=int,   default=5,              help='Number of attempts to translate each function')
+    parser.add_argument('--num_attempts',   type=int,   default=2,              help='Number of attempts to translate each function')
     parser.add_argument('--output_dir',     type=str,   default='output/translation', help='Directory to write the output')
     parser.add_argument('--verbose',        action='store_true',                help='Enable verbose output')
     args = parser.parse_args()

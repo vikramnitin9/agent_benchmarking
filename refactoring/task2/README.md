@@ -1,16 +1,5 @@
 ## Dependencies
-- Python 3.10
-- Pip
 - Docker (any version)
-
-Once you have Python and Pip installed, run
-```sh
-pip install -r requirements.txt
-```
-You also need an OpenAI API key to run the full Python code.
-```sh
-echo 'OPENAI_API_KEY="<your_key_here>"' > source/models/.env
-```
 
 ## Steps to follow
 First copy the original code to the working directory
