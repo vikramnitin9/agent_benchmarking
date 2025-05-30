@@ -11,7 +11,7 @@
 
 #include "llvm/Target/TargetMachine.h"
 #include "llvm/Support/FileSystem.h"
-#include "llvm/MC/TargetRegistry.h"
+#include "llvm/Support/TargetRegistry.h"
 #include "llvm/Support/TargetSelect.h"
 #include "llvm/IR/LegacyPassManager.h"
 #include "llvm/Support/Host.h"
@@ -144,7 +144,7 @@ int main(int argc, const char **argv) {
 	llvm::legacy::PassManager PM;
 	std::string ErrorMessage;  // Use std::string for the error message
 
-	// Write the module to an .ll file
+	// // Write the module to an .ll file
 	// llvm::raw_fd_ostream IRFile("instrumented.ll", EC);
 	// M->print(IRFile, nullptr);
 

@@ -7,7 +7,8 @@ cmake .. && make
 Then I run it on the example code to generate the static library and the executable:
 ```
 cd ../example
-make clean && bear make
+make clean
+[[ $(bear --version | awk '{print $2}' | cut -d. -f1) -lt 3 ]] && bear make || bear -- make
 ../build/parsec *c
 clang libfoo.a -o foo
 ```

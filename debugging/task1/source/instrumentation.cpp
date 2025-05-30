@@ -59,7 +59,6 @@ void addInstrumentation(Module &M) {
 		Builder.CreateCall(Snprintf, {FullPathBuffer, ConstantInt::get(Type::getInt64Ty(Context), 512),
 																	FormatStr, DirPath});
 
-		// Use CreateSelect with correctly typed pointers
 		Value *FinalFilePath = Builder.CreateSelect(IsEnvSet, FullPathBuffer, DefaultPath);
 		
 		// Open file in append mode

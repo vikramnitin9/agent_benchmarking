@@ -1,12 +1,5 @@
 ## Dependencies
-```sh
-sudo apt install gcc-9 g++-9
-wget https://apt.llvm.org/llvm.sh
-chmod +x llvm.sh
-sudo ./llvm.sh 14
-sudo apt install llvm-14 llvm-14-dev llvm-14-tools clang-14 libclang-14-dev
-sudo apt install bear
-```
+- Docker
 
 ## Steps to follow
 First copy the original code to the working directory
