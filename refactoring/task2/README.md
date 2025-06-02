@@ -15,8 +15,6 @@ User Experience:
 - Stops only when finished: 3
 - Attempts to run and test the code (irrespective of whether this attempt is successful or not): 4*
 
-*Note that it must run the code until "Translation Succeeded" is visible on the terminal. If it stops monitoring the output before that, deduct 1 point.
-
 Correctness:
 - Creates at least file per class (there are 6 classes): 4
 - Syntactically correct: 2
