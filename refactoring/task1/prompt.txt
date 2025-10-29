@@ -1,3 +1,3 @@
-Refactor the code in `refactoring/task1/<dirname>` by separating each class into a different file.
+Refactor the code in the current directory by separating each class into a different file.
 Create all the necessary header files.
 Also modify CMakeLists.txt accordingly, and make sure that the project still compiles.

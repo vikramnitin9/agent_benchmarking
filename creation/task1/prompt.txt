@@ -1,3 +1,3 @@
 Write an LLVM Pass to instrument C code to log the arguments and return values of each function. Write a Makefile and compile this pass so that it  can be loaded and run with `opt`.
 Also create a toy C program, compile it to LLVM bitcode and instrument it with this pass using `opt`. Compile and run the instrumented code and verify that the arguments and return values are being logged.
-Create all your files in the directory `creation/task1/<dirname>`
+Create all your files in the current directory.

@@ -1,4 +1,4 @@
-Refactor the code in `refactoring/task2/<dirname>/main.py` by separating each class into a different file.
+Refactor the code in main.py by separating each class into a different file.
 Feel free to create new directories or move around files as you like.
 Make sure that the code still runs, at the end of this. First rebuild the Docker container to include the new code. Note that you need to do this every time your Python code changes:
 ```

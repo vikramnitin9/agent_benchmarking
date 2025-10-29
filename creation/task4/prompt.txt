@@ -1,4 +1,4 @@
 Create a Rust program to take a crate and count the number of raw pointer dereferences within this crate.
 You can use the HIR to do this. Implement your program as a cargo subcommand.
 Also create a sample Rust project to test out your program. Run your program on this sample project and make sure that the output is correct.
-Create all your files under `creation/task4/<dirname>`.
+Create all your files in the current directory.

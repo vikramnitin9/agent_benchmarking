@@ -1,6 +1,5 @@
-I encounter a runtime error when attempting to run the project in `debugging/task1/<dirname>`. The commands I'm running are:
+I encounter a runtime error when attempting to run the project in the current directory. The commands I'm running are:
 ```
-cd debugging/task1/<dirname>
 docker build . -t parsec
 docker run parsec
 ```

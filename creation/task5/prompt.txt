@@ -9,7 +9,7 @@ I want to plot a graph of the success rate against length, where the length is d
 E.g., 0-10, 10-20, ...
 I want to plot a line graph of the success rate of each bin. On the same graph, I want to plot a bar plot of the number of functions in each bin.
 
-I've attached a screenshot of the desired graph. Try to replicate it a closely as possible, including legend, axis labels, etc.
+A screenshot of the desired graph is in `prompt.png`. Try to replicate it a closely as possible, including legend, axis labels, etc.
 
 Write a Python script with Matplotlib to do this. Create some sample data as well as the Python program. Run the Python program and save the plot to `plot.pdf`.
-Create all your files in `creation/task5/<dirname>`.
+Create all your files in the current directory.

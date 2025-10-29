@@ -1,6 +1,5 @@
-In the directory `debugging/task3/<dirname>`, I'm building a utility, `parsec` to parse C code, add instrumentation to it, and generate a static library. I build it with the following commands:
+In the current directory, I'm building a utility, `parsec` to parse C code, add instrumentation to it, and generate a static library. I build it with the following commands:
 ```
-cd debugging/task3/<dirname>/
 mkdir build && cd build
 cmake .. && make
 ```

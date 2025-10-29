@@ -2,4 +2,4 @@ Write a bash script to print the names of all executable targets from a Makefile
 Keep in mind that "clean" and "all" is not an exhaustive set of PHONY targets, and there could be more defined under .PHONY in the Makefile.
 Also keep in mind that the executable targets may not directly be listed as their name, but could be referenced through a variable like $(VAR). So simply parsing the text of the Makefile will not work.
 To verify that your bash script is working, create a sample C++ program with a Makefile and at least 2 executable targets. Test the bash script on this program and check if it lists the executable targets correctly.
-Create all your files in the directory `creation/task2/<dirname>`.
+Create all your files in the current directory.
