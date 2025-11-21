@@ -15,4 +15,4 @@ Correctness:
 - Creates both the counter and the test program: 2
 - Counter compiles: 2
 - Counter runs and produces a correct count: 3
-- Counter implemented using Rust IR specifically: 2
+- Counter implemented using Rust IR specifically: 3

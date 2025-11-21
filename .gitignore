@@ -5,3 +5,7 @@ target/
 *.o
 *.a
 compile_commands.json
+**/run_*/
+*.tmp
+scripts/
+*/*/comparison.txt

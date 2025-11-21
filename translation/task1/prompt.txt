@@ -1,0 +1,1 @@
+Zopfli is a compression library programmed in C to perform deflate or zlib compression. The source code of Zopfli is under src/zopfli. Translate this program from C to Rust. You can disregard the src/zopfli_png folder. The resulting Rust program should be functionally identical to the C program. Verify that it compiles into an executable.
